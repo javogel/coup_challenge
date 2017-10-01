@@ -1,0 +1,30 @@
+Design considerations: In order to build a quick rack based api Sinatra chosen
+because of its ease of setup and use.
+
+
+Constraints:
+
+
+Future improvements:
+
+
+To run, first do:
+
+  `bundle install`
+
+Then:
+
+  `ruby app.rb`
+
+For example
+
+    endpoint:
+      post  `/scooters`
+
+    and a request with body:
+      { "scooters": [15, 10],
+        "C": 12,
+        "P": 5 }
+
+    gets the response:
+      { "fleet_engineers" : 3 }
