@@ -10,6 +10,12 @@ problem at hand, but to also keep future extensibility and change in mind.
 Since this is an HTTP API, JSON was chosen as the request/response
 format, mainly to help ensure uniformity and standardization as the application grows.
 
+## Solution strategy
+In order to find the minimum number of Fleet Engineers (FE) needed: First, we find the district
+where the Fleet Manager's (FM) presence would reduce the need for FEs the most.
+To that district we assign the FM. Then, we calculate how many FEs are still necessary
+to perform maintenance on the remaining scooters.
+
 ## Notes:
 Using JSON as the request/response format implied slight changes to the formatting
 of the inputs in the challenge documentation, like adding quotes to the keys.
