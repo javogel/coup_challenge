@@ -16,14 +16,14 @@ where the Fleet Manager's (FM) presence would reduce the need for FEs the most.
 To that district we assign the FM. Then, we calculate how many FEs are still necessary
 to perform maintenance on the remaining scooters.
 
-## Notes:
-Using JSON as the request/response format implied slight changes to the formatting
-of the inputs in the challenge documentation, like adding quotes to the keys.
-
 ## Future improvements:
 Given more time, it would be worthwhile to add tests to this application.
 Further, given more requirements and information on the product, some more
 thought will have to be put into the structure of the application as it grows.
+
+## Notes:
+Using JSON as the request/response format implied slight changes to the formatting
+of the inputs in the challenge documentation, like adding quotes to the keys.
 
 ## Getting Started:
 To run, first do:
