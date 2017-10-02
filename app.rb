@@ -2,7 +2,7 @@
 require 'sinatra/base'
 require 'json'
 require './lib/fleet_optimizer'
-require 'pry'
+# require 'pry'   
 
 class CoupApp < Sinatra::Base
 
