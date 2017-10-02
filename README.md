@@ -1,6 +1,6 @@
-#COUP Challenge
+# COUP Challenge
 
-##Design considerations
+## Design considerations
 Ruby was the language of choice because of it opens source libraries(or gems),
 its community, and lastly because of the present developrs strength with the language.
 Then, in order to quickly build a Rack based api the Sinatra framework was chosen for
@@ -14,7 +14,7 @@ format, mainly to help ensure uniformity and standardization as the application 
 Using JSON as the request/response format implied slight changes to the formatting
 of the inputs in the challenge documentation, like adding quotes to the keys.
 
-##Future improvements:
+## Future improvements:
 Given more time, it would be worthwhile to add tests to this application.
 Further, given more requirements and information on the product, some more
 thought will have to be put into the structure of the application as it grows.
