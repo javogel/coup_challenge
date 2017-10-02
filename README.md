@@ -19,6 +19,7 @@ Given more time, it would be worthwhile to add tests to this application.
 Further, given more requirements and information on the product, some more
 thought will have to be put into the structure of the application as it grows.
 
+## Getting Started:
 
 To run, first do:
 ```
