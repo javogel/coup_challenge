@@ -2,7 +2,7 @@
 
 ## Design considerations
 Ruby was the language of choice because of it opens source libraries(or gems),
-its community, and lastly because of the present developrs strength with the language.
+its community, and lastly because of the present developers strength with the language.
 Then, in order to quickly build a Rack based api the Sinatra framework was chosen for
 its quick setup and simplicity.  The design mainly aimed at solving the
 problem at hand, but to also keep future extensibility and change in mind.
@@ -20,7 +20,6 @@ Further, given more requirements and information on the product, some more
 thought will have to be put into the structure of the application as it grows.
 
 ## Getting Started:
-
 To run, first do:
 ```
 bundle install
@@ -31,7 +30,8 @@ Then:
 ruby app.rb
 ```
 
-For example, the endpoint:
+## Example:
+The endpoint:
 ```
 post  '/scooters'
 ```
