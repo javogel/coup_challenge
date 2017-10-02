@@ -1,17 +1,26 @@
 #!/usr/local/bin/ruby
-require 'sinatra'
+require 'sinatra/base'
 require 'json'
 require './lib/fleet_optimizer'
-# require 'pry'
+require 'pry'
 
-OPTIMIZER = FleetOptimizer.new
+class CoupApp < Sinatra::Base
 
-post '/scooters' do
-  content_type :json
+  before do
+    request.body.rewind
+    @parsed_request = JSON.parse(request.body.read, symbolize_names: true)
+  end
 
-  request_body = request.body.string
-  parsed_request = JSON.parse(request_body, symbolize_names: true)
-  engineers_needed = OPTIMIZER.call(**parsed_request)
+  post '/scooters' do
+    content_type :json
+    engineers_needed = optimizer.call(**@parsed_request)
+    { fleet_engineers: engineers_needed }.to_json
+  end
 
-  { fleet_engineers: engineers_needed }.to_json
+  private
+
+  def optimizer
+    @optimizer ||= FleetOptimizer.new
+  end
+
 end
